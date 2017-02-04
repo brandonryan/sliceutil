@@ -26,7 +26,7 @@ func DeleteSName(a []SType, i int, count int) []SType {
 	return a[:len(a)-count]
 }
 
-//CutSName cuts data out of a slice and returns the new cut array and the data cut from it
+//CutSName cuts data out of a slice then returns the new cut array and the data cut from it
 func CutSName(a []SType, i int, count int) ([]SType, []SType) {
 	b := make([]SType, count)
 	copy(b, a[i:i+count])
